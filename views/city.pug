@@ -1,0 +1,10 @@
+include partials/header.pug
+
+.container
+    h1= details.title + ":" + details.heading
+    .row
+    - for( var i = 1; i <= details.numImages; i++ )
+        .col-md-6
+            img.img-responsive.thumbnail(src="/images/" + city + "/" + city + "-" + i + ".jpg")
+
+include partials/footer.pug
